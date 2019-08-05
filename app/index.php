@@ -99,7 +99,7 @@
 					<article class="new">
 						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture">
 						<div class="new-content">
-							<span class="new-tag">8º Olhar de Cinema</span>
+							<span class="tag">8º Olhar de Cinema</span>
 							<h4 class="new-title">
 								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
 							</h4>
@@ -112,7 +112,7 @@
 					<article class="new">
 						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture">
 						<div class="new-content">
-							<span class="new-tag">8º Olhar de Cinema</span>
+							<span class="tag">8º Olhar de Cinema</span>
 							<h4 class="new-title">
 								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
 							</h4>
@@ -127,7 +127,7 @@
 					<article class="new">
 						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture--small">
 						<div class="new-content--small">
-							<span class="new-tag">8º Olhar de Cinema</span>
+							<span class="tag">8º Olhar de Cinema</span>
 							<h4 class="new-title">
 								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
 							</h4>
@@ -140,7 +140,7 @@
 					<article class="new">
 						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture--small">
 						<div class="new-content--small">
-							<span class="new-tag">8º Olhar de Cinema</span>
+							<span class="tag">8º Olhar de Cinema</span>
 							<h4 class="new-title">
 								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
 							</h4>
@@ -152,7 +152,7 @@
 					<article class="new">
 						<img src="https://i.imgur.com/3wTAEWW.png" alt="" class="new-picture--small">
 						<div class="new-content--small">
-							<span class="new-tag">8º Olhar de Cinema</span>
+							<span class="tag">8º Olhar de Cinema</span>
 							<h4 class="new-title">
 								Zumbilândia 2: diretor revela mais detalhes sobre a sequência
 							</h4>
@@ -166,17 +166,9 @@
 			</section>
 		</section>
 
-		<!-- Newsletter -->
-		<section class="content newsletter">
-			<h3 class="newsletter-title">Newsletter</h3>
-			<p class="newsletter-text">
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-				Eaque, ducimus reiciendis illo quo dolorum
-			</p>
-			<div class="is-center">
-				<button type="button" class="btn btn-default btn-small">Assinar</button>
-			</div>
-		</section>
+		<?php 
+			include 'templates/newsletter.php';
+		?>
 
 		<!-- Cobertura -->
 		<section class="content bg-lightgrey">
