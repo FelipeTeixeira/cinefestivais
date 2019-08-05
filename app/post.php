@@ -78,7 +78,7 @@
             Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
             harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
             officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+            Itaque cum corrupti <a href="">repellendus beatae reprehenderit</a> nihil ipsa totam asperiores,
             harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
             officia ipsum?</p>
 
@@ -88,7 +88,7 @@
             officia ipsum?
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+            harum provident <a href="">repudiandae excepturi ratione</a> voluptatibus ex delectus eaque molestiae
             officia ipsum?</p>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -149,6 +149,20 @@
     </q>
 
     <hr class="postpage-body--separator">
+
+    <div class="postpage-body--related">
+        <h2 class="related-title">
+            Assuntos Relacionados
+        </h2>
+        <div class="tags">
+            <span class="tag">Entrevistas</span>
+            <span class="tag">8º olhar de cinema</span>
+            <span class="tag">8º olhar de cinema</span>
+            <span class="tag">Cinema</span>
+            <span class="tag">Filme</span>
+        </div>
+
+    </div>
 
     <?php 
         include 'templates/newsletter.php';

@@ -61,6 +61,7 @@
 
     &--author {
         padding: 0 32px;
+
         .author-picture {
             display: flex;
             flex-flow: row wrap;
@@ -76,9 +77,11 @@
 
         .author-name {
             margin-bottom: 16px;
+
             a {
                 font-size: 0.875rem;
             }
+
             a:not(:last-child)::after {
                 content: ', '
             }
@@ -119,11 +122,13 @@
         img {
             width: 100%;
         }
+
         figcaption {
             font-size: 0.750rem;
             padding: 0 32px;
             text-align: justify;
         }
+
         .figure-title {
             font-weight: bold;
             text-transform: uppercase;
@@ -133,5 +138,21 @@
     q {
         margin: 0 0 32px;
         padding: 0 32px;
+    }
+
+    &--related {
+        margin: 32px 0 0;
+
+        .related-title {
+            text-align: center;
+        }
+
+        .tags {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 16px 0;
+        }
+
     }
 }
