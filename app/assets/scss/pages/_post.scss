@@ -155,4 +155,47 @@
         }
 
     }
+
+    &--contact {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 32px;
+        
+        .contact-author {
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin-bottom: 32px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            .icon {
+                fill: $pink;
+                height: 15px;
+                margin-right: 8px;
+                width: 15px;
+            }
+
+            &--info {
+                color: $pink;
+                padding-left: 8px;
+                width: 70%;
+                h3 {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                }
+                span {
+                    align-items: center;
+                    display: inline-flex;
+                    flex-flow: row nowrap;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
 }

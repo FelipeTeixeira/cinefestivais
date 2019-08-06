@@ -22,7 +22,8 @@
             border-top: 1px solid $pink;
             content: "";
             display: block;
-            transform: translate(calc(50vw - 36px));
+            // transform: translate(calc(50vw - 36px));
+            left: calc(50% - 12px);
             position: relative;
             width: 24px;
             @media screen and (min-width: 1024px) {

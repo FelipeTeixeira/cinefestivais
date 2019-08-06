@@ -1,4 +1,8 @@
 .is-center {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     text-align: center !important;
 }
 
@@ -13,6 +17,15 @@
 .mb-24 {
     margin-bottom: 24px!important;
 }
+
+.m-32 {
+    margin: 32px 0;
+}
+
+.nomargin {
+    margin: 0!important;
+}
+
 
 .deco-none {
     text-decoration: none;
