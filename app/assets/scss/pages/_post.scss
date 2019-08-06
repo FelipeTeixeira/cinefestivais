@@ -2,6 +2,10 @@
 
     &--picture {
         width: 100%;
+        @media screen and (min-width: 1024px) {
+            height: 400px;
+            width: 100%;
+        }
     }
 
     &--social {
@@ -12,6 +16,11 @@
         margin: 16px 16px 0;
         padding: 16px 16px 0;
         transform: translateY(-50%);
+        @media screen and (min-width: 1024px) {
+            flex-flow: row wrap;
+            justify-content: space-between;
+            transform: translateY(-100%);
+        }
 
 
         .social-icons {
@@ -19,6 +28,11 @@
             flex-flow: row wrap;
             justify-content: space-between;
             margin-top: 32px;
+            @media screen and (min-width: 1024px) {
+                min-width: 250px;
+                margin: 0;
+            }
+            
 
             span:empty {
                 background-color: $gray;
