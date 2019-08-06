@@ -5,11 +5,16 @@
         font-size: 2rem;
         margin-bottom: 32px;
         padding: 0 32px;
-
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
     }
 
     &--author {
         padding: 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
 
         .author-picture {
             display: flex;
@@ -44,11 +49,17 @@
         font-size: 0.875rem;
         margin-bottom: 8px;
         padding: 0 8px 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
 
     }
 
     &--separator {
         margin: 0 32px;
+        @media screen and (min-width: 1024px) {
+            display: none;
+        }
     }
 
     &--updated {
@@ -57,10 +68,16 @@
         font-size: 0.875rem;
         margin-bottom: 32px;
         padding: 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
     }
 
     &--text {
         padding: 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
 
         p {
             margin: 32px 0;
