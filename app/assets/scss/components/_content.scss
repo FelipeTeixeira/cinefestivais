@@ -30,4 +30,16 @@
             }
         }
     }
+
+    &-card {
+        background-color: #fff;
+        position: relative;
+        top: -50px;
+        &--title {
+            margin-bottom: 16px;
+        }
+        &--text {
+            margin: 16px 0;
+        }
+    }
 }

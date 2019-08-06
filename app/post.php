@@ -2,9 +2,9 @@
 	include 'templates/nav-bar.php';
 ?>
 
-<header class="postpage-header">
-    <img src="https://picsum.photos/id/237/350/500" alt="" class="postpage-header--picture">
-    <div class="postpage-header--social">
+<header class="post-header">
+    <img src="https://picsum.photos/id/237/350/500" alt="" class="post-header--picture">
+    <div class="post-header--social">
         <div class="tags">
             <span class="tag">Entrevistas</span>
             <span class="tag">8º olhar de cinema</span>
