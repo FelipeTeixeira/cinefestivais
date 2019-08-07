@@ -10,14 +10,18 @@
 @import "objects/img-thumbnail";
 
 @import "components/article";
-@import "components/cobertura";
-@import "components/navbar";
-@import "components/header";
 @import "components/card";
+@import "components/cobertura";
 @import "components/content";
 @import "components/footer";
+@import "components/header";
+@import "components/navbar";
 @import "components/new";
 @import "components/newsletter";
+@import "components/post-header";
+@import "components/tag";
+
+@import "pages/post";
 
 @import "trumps/trumps";
 

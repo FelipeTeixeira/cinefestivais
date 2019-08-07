@@ -1,0 +1,167 @@
+.postpage-body {
+    padding: 0 0 16px;
+
+    &--title {
+        font-size: 2rem;
+        margin-bottom: 32px;
+        padding: 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
+    }
+
+    &--author {
+        padding: 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
+
+        .author-picture {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+
+            img {
+                border-radius: 50%;
+                margin-right: 16px;
+                width: 50px;
+            }
+
+        }
+
+        .author-name {
+            margin-bottom: 16px;
+
+            a {
+                font-size: 0.875rem;
+            }
+
+            a:not(:last-child)::after {
+                content: ', '
+            }
+        }
+    }
+
+    &--timehour {
+        border-right: 2px solid $gray;
+        color: $black;
+        font-weight: bold;
+        font-size: 0.875rem;
+        margin-bottom: 8px;
+        padding: 0 8px 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
+
+    }
+
+    &--separator {
+        margin: 0 32px;
+        @media screen and (min-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &--updated {
+        color: $gray;
+        display: block;
+        font-size: 0.875rem;
+        margin-bottom: 32px;
+        padding: 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
+    }
+
+    &--text {
+        padding: 0 32px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
+
+        p {
+            margin: 32px 0;
+        }
+    }
+
+    &--figure {
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            font-size: 0.750rem;
+            padding: 0 32px;
+            text-align: justify;
+        }
+
+        .figure-title {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    q {
+        margin: 0 0 32px;
+        padding: 0 32px;
+    }
+
+    &--related {
+        margin: 32px 0 0;
+
+        .related-title {
+            text-align: center;
+        }
+
+        .tags {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            margin: 16px 0;
+        }
+
+    }
+
+    &--contact {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 32px;
+        
+        .contact-author {
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin-bottom: 32px;
+
+            img {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            .icon {
+                fill: $pink;
+                height: 15px;
+                margin-right: 8px;
+                width: 15px;
+            }
+
+            &--info {
+                color: $pink;
+                padding-left: 8px;
+                width: 70%;
+                h3 {
+                    font-size: 0.9rem;
+                    font-weight: bold;
+                }
+                span {
+                    align-items: center;
+                    display: inline-flex;
+                    flex-flow: row nowrap;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}

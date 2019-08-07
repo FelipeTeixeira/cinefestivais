@@ -1,10 +1,20 @@
 .btn {
+    align-items: center;
     cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
     font-weight: bold;
+    justify-content: space-around;
     padding: 10px;
     transition: all .5s ease-in;
     text-transform: uppercase;
     width: 100%;
+
+    .icon {
+        fill: $white;
+        height: 20px;
+        width: 20px;
+    }
 
     &.btn-default {
         background-color: transparent;
@@ -31,6 +41,12 @@
         width: 50%;
         @media screen and (min-width: 1024px) {
             width: 15%;
+        }
+    }
+    &.btn-medium {
+        width: 75%;
+        @media screen and (min-width: 1024px) {
+            width: 20%;
         }
     }
 }

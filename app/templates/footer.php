@@ -20,7 +20,7 @@
             </div>
 
         </nav>
-        <nav class="footer-social">
+        <div class="footer-social">
             <a href="">
                 <svg class="icon icon-facebook">
                     <use xlink:href="#icon-facebook"></use>
@@ -41,7 +41,7 @@
                     <use xlink:href="#icon-youtube"></use>
                 </svg>
             </a>
-        </nav>
+        </div>
         <p class="footer-copyright">
             © 2019 Cine festivais <br>
             Todos os direitos reservados
