@@ -50,7 +50,8 @@
             <img src="https://i.imgur.com/dEZ0sdV.png" alt="">
         </div>
     </footer>
-	<!-- JSfiles -->
+    <!-- JSfiles -->
+    <script src="./js/jquery.min.js"></script>
 	<script src="./js/script.js"></script>
 </body>
 
