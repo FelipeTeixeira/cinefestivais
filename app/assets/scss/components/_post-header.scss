@@ -51,6 +51,14 @@
         }
     }
 
+    &.bg-contato {
+        background-image: url('./../img/contato-mobile-bg.png');
+        background-position: unset;
+        @media screen and (min-width: 768px) {
+            background-image: url('./../img/contato-bg.png');
+        }
+    }
+
     &--title {
         border: 3px solid #fff;
         color: #fff;
