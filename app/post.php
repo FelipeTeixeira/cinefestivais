@@ -54,8 +54,8 @@
     <section class="postpage-body--author">
 
         <div class="author-picture">
-            <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
-            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="">
+            <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-photo" alt="">
+            <img src="https://randomuser.me/api/portraits/women/28.jpg" class="profile-photo" alt="">
         </div>
         <div class="author-name">
             <a href="#">Adriano Garrett</a>
