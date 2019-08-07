@@ -32,7 +32,7 @@
 			<li><a href="" class="navbar-menu-item">Reportagens</a></li>
 			<li><a href="" class="navbar-menu-item">Podcasts</a></li>
 			<li><a href="quem-somos.php" class="navbar-menu-item teste">Quem Somos</a></li>
-			<li><a href="" class="navbar-menu-item teste">Anuncie</a></li>
+			<li><a href="anuncie.php" class="navbar-menu-item teste">Anuncie</a></li>
 			<li><a href="contato.php" class="navbar-menu-item teste">Contato</a></li>
 			<li>
 				<a href="" class="navbar-menu-social">
