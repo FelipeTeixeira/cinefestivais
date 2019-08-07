@@ -1,8 +1,10 @@
 .post-header {
-
+    @media screen and (min-width: 1024px) {
+        margin: 0 64px;
+    }
     &--picture {
         width: 100%;
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             height: 400px;
             width: 100%;
         }
@@ -38,6 +40,9 @@
             span:empty {
                 background-color: $gray;
                 width: 1px;
+                @media screen and (min-width: 1024px) {
+                    margin: 0 16px;
+                }
             }
 
             .icon {
@@ -45,14 +50,48 @@
                 border-radius: 50%;
                 fill: $white;
                 height: 30px;
-                padding: 5px;
-                width: 30px;
+                padding: 3px;
+                width: 35px;
+
+            }
+            .icon-bubble {
+                fill: $gray;
+                background-color: #fff;
             }
 
             &--share {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+
+                .share-icon {
+                    align-items: center;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    padding: 0 4px;
+
+                    .icon-share-alt {
+                        fill: $gray;
+                        background-color: #fff;
+                    }
+                    &--text {
+                        display: none;
+                        @media screen and (min-width: 768px) {
+                            color: $gray;
+                            display: inline;
+                            padding: 0 8px;
+                        }
+                    }
+                }
 
                 a {
+                    padding: 0 2px;
                     text-decoration: none;
+                    @media screen and (min-width: 1024px) {
+                        padding: 0 4px;
+                    }
                 }
 
 

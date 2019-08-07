@@ -6,6 +6,12 @@
     text-align: center !important;
 }
 
+.flex-row-between {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 .is-hidden { 
     display: none !important;
 }
@@ -20,6 +26,10 @@
 
 .m-32 {
     margin: 32px 0;
+}
+
+.mt-32 {
+    margin-top: 32px;
 }
 
 .nomargin {

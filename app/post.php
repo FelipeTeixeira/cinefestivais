@@ -18,17 +18,15 @@
             <span></span>
 
             <div class="social-icons--share">
-                <svg class="icon icon-share-alt">
-                    <use xlink:href="#icon-share-alt"></use>
-                </svg>
+                <div class="share-icon">
+                    <svg class="icon icon-share-alt">
+                        <use xlink:href="#icon-share-alt"></use>
+                    </svg>
+                    <span class="share-icon--text">Compartilhar</span>
+                </div>
                 <a href="">
                     <svg class="icon icon-facebook">
                         <use xlink:href="#icon-facebook"></use>
-                    </svg>
-                </a>
-                <a href="">
-                    <svg class="icon icon-instagram">
-                        <use xlink:href="#icon-instagram"></use>
                     </svg>
                 </a>
                 <a href="">
@@ -37,9 +35,12 @@
                     </svg>
                 </a>
                 <a href="">
-                    <svg class="icon icon-youtube">
-                        <use xlink:href="#icon-youtube"></use>
+                    <svg class="icon icon-envelope">
+                        <use xlink:href="#icon-envelope"></use>
                     </svg>
+                </a>
+                <a href="">
+                <svg class="icon icon-link"><use xlink:href="#icon-link"></use></svg>
                 </a>
             </div>
         </div>
@@ -57,7 +58,7 @@
             <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="">
         </div>
         <div class="author-name">
-            <a href="#">Adriano Garreti</a>
+            <a href="#">Adriano Garrett</a>
             <a href="#">Gabriela Oliveira</a>
         </div>
 
@@ -72,34 +73,39 @@
 
     <hr class="postpage-body--separator">
 
-    <section class="postpage-body--text">
+    <div class="flex-row-between">
+        <section class="postpage-body--text">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti <a href="">repellendus beatae reprehenderit</a> nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti <a href="">repellendus beatae reprehenderit</a> nihil ipsa totam asperiores,
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                officia ipsum?</p>
 
-        <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident <a href="">repudiandae excepturi ratione</a> voluptatibus ex delectus eaque molestiae
-            officia ipsum?</p>
+            <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                officia ipsum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                harum provident <a href="">repudiandae excepturi ratione</a> voluptatibus ex delectus eaque molestiae
+                officia ipsum?</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                officia ipsum?</p>
 
-    </section>
+        </section>
+        <div class="postpage-body--ads">
+            <img src="https://dss.cbm.codes/wp-content/uploads/2017/02/news-layout-thumb-2-1024x1024.jpg" alt="">
+        </div>
+    </div>
 
     <figure class="postpage-body--figure">
         <img src="https://picsum.photos/id/236/600/300" alt="Random picture">
@@ -148,9 +154,20 @@
         officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </q>
 
-    <hr class="postpage-body--separator">
+    <section class="postpage-body--text">
 
-    <section class="postpage-body--text m-32">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+            officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+            officia ipsum?</p>
+
+
+    </section>
+
+    <section class="postpage-body--text mt-32">
         <h3>Sob Pressão</h3>
         <p class="nomargin">Os filmes que fiz até hoje ão sobre os outros; são filmes cujo tema é a alteridade,
             a diferença, então eles partem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -158,6 +175,8 @@
             placeat quaerat unde ad quasi soluta mollitia saepe consequuntur quibusdam porro,
             obcaecati accusamus. Eveniet, error.</p>
     </section>
+
+    <hr class="postpage-body--separator">
 
     <section class="postpage-body--related">
         <h2 class="related-title">
@@ -175,16 +194,16 @@
 
     <section class="postpage-body--contact content">
 
-        <h2 class="content-title">Notícias</h2>
+        <h2 class="content-title">Entre em contato</h2>
 
         <div class="contact-author">
 
             <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
             <div class="contact-author--info">
-                <h3>Adriano Garreti</h3>
+                <h3>Adriano Garrett</h3>
                 <span>
-                    <svg class="icon icon-bubble">
-                        <use xlink:href="#icon-bubble"></use>
+                    <svg class="icon icon-envelope">
+                        <use xlink:href="#icon-envelope"></use>
                     </svg>
                     adriano@cinefestivais.com.br
                 </span>
@@ -204,8 +223,8 @@
             <div class="contact-author--info">
                 <h3>Gabriela Oliveira</h3>
                 <span>
-                    <svg class="icon icon-bubble">
-                        <use xlink:href="#icon-bubble"></use>
+                    <svg class="icon icon-envelope">
+                        <use xlink:href="#icon-envelope"></use>
                     </svg>
                     gabriela@cinefestivais.com.br
                 </span>
