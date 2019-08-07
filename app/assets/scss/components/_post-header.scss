@@ -1,9 +1,72 @@
 .post-header {
+    font-weight: bold;
+    @media screen and (min-width: 768px) {
+        padding: 32px 0;
+    }
     @media screen and (min-width: 1024px) {
         margin: 0 64px;
     }
+
+    &.full {
+        @media screen and (min-width: 1024px) {
+            margin: 0;
+        }
+    }
+
+    &.bg-img {
+        align-items: flex-end;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        height: 500px;
+        padding: 0 16px;
+        @media screen and (min-width: 768px) {
+            height: 400px;
+            padding: 0 32px;
+        }
+
+    }
+    
+    &.bg-cobertura {
+        background-image: url('./../img/cobertura-mobile-header.png');
+        @media screen and (min-width: 768px) {
+            background-image: url('./../img/cobertura-header.png');
+        }
+    }
+
+    &.bg-quemsomos {
+        background-image: url('./../img/quem-somos-mobile-bg.png');
+        @media screen and (min-width: 768px) {
+            background-image: url('./../img/quem-somos-bg.png');
+        }
+    }
+
+    &.bg-entrevistas {
+        background-image: url('./../img/entrevistas-mobile-bg.png');
+        @media screen and (min-width: 768px) {
+            background-image: url('./../img/entrevistas-bg.png');
+        }
+    }
+
+    &--title {
+        border: 3px solid #fff;
+        color: #fff;
+        bottom: 16px;
+        position: relative;
+        padding: 0 16px;
+
+        @media screen and (min-width: 1024px) {
+            bottom: 32px;
+            left: 32px;
+        }
+    }
+
     &--picture {
         width: 100%;
+
         @media screen and (min-width: 768px) {
             height: 400px;
             width: 100%;
@@ -18,6 +81,7 @@
         margin: 16px 16px 0;
         padding: 16px 16px 0;
         transform: translateY(-50%);
+
         @media screen and (min-width: 1024px) {
             flex-flow: row wrap;
             justify-content: space-between;
@@ -31,15 +95,17 @@
             flex-flow: row wrap;
             justify-content: space-between;
             margin-top: 32px;
+
             @media screen and (min-width: 1024px) {
                 min-width: 250px;
                 margin: 0;
             }
-            
+
 
             span:empty {
                 background-color: $gray;
                 width: 1px;
+
                 @media screen and (min-width: 1024px) {
                     margin: 0 16px;
                 }
@@ -54,6 +120,7 @@
                 width: 35px;
 
             }
+
             .icon-bubble {
                 fill: $gray;
                 background-color: #fff;
@@ -76,8 +143,10 @@
                         fill: $gray;
                         background-color: #fff;
                     }
+
                     &--text {
                         display: none;
+
                         @media screen and (min-width: 768px) {
                             color: $gray;
                             display: inline;
@@ -89,6 +158,7 @@
                 a {
                     padding: 0 2px;
                     text-decoration: none;
+
                     @media screen and (min-width: 1024px) {
                         padding: 0 4px;
                     }
@@ -101,4 +171,12 @@
 
     }
 
+}
+
+.header-banner {
+    background-color: #eeeeee;
+    color: $gray;
+    font-size: 0.875rem;
+    padding: 4px 0;
+    text-align: center;
 }

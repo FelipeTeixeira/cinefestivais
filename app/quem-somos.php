@@ -2,8 +2,7 @@
 	include 'templates/nav-bar.php';
 ?>
 
-<header class="post-header">
-    <img src="https://picsum.photos/id/237/350/500" alt="" class="post-header--picture">
+<header class="post-header full bg-img bg-quemsomos">
 </header>
 
 <article class="">
@@ -78,5 +77,5 @@
 </article>
 
 <?php 
-    include 'templates/footer.php';
+	include 'templates/footer.php';
 ?>

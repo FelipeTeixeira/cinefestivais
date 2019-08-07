@@ -10,13 +10,23 @@
     flex-flow: column wrap;
     margin-bottom: 16px;
     width: 50%;
+
+    @media screen and (min-width: 768px) {
+        width: 33%
+    }
+
     @media screen and (min-width: 1024px) {
+        margin-bottom: 98px;
         width: 16.66%;
     }
-    
+
 
     &-picture {
+        padding: 0 16px;
 
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+        }
     }
 
     &-legend {

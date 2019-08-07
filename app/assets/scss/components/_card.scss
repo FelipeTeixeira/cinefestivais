@@ -30,8 +30,15 @@
             background-color: $navyBlue;
             color: #fff;
             font-size: 0.75rem;
+            font-weight: bold;
             text-transform: uppercase;
             padding: 4px 16px;
+
+            &.white {
+                background-color: #fff;
+                border: 1px solid $navyBlue;
+                color: $navyBlue;
+            }
         }
     }
 
@@ -40,5 +47,21 @@
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
+    }
+
+    &-time {
+        color: $gray;
+        font-size: 0.750rem;
+        margin-top: 16px;
+        text-align: center;
+        &::before {
+            bottom: 8px;
+            border-top: 1px solid $gray;
+            content: "";
+            display: block;
+            left: calc(50% - 12px);
+            position: relative;
+            width: 24px;
+        }
     }
 }

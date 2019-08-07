@@ -25,15 +25,15 @@
 		<img src="./assets/img/icone-cine-festivais.svg" alt="" class="navbar-menu-logo">
 
 		<ul>
-			<li><a href="" class="navbar-menu-item">Entrevistas</a></li>
+			<li><a href="entrevistas.php" class="navbar-menu-item">Entrevistas</a></li>
 			<li><a href="" class="navbar-menu-item">Críticas</a></li>
-			<li><a href="" class="navbar-menu-item">Coberturas a</a></li>
+			<li><a href="coberturas.php" class="navbar-menu-item">Coberturas</a></li>
 			<li><a href="" class="navbar-menu-item">Notícias</a></li>
 			<li><a href="" class="navbar-menu-item">Reportagens</a></li>
 			<li><a href="" class="navbar-menu-item">Podcasts</a></li>
-			<li><a href="" class="navbar-menu-item teste">Quem Somos</a></li>
+			<li><a href="quem-somos.php" class="navbar-menu-item teste">Quem Somos</a></li>
 			<li><a href="" class="navbar-menu-item teste">Anuncie</a></li>
-			<li><a href="" class="navbar-menu-item teste">Contato</a></li>
+			<li><a href="contato.php" class="navbar-menu-item teste">Contato</a></li>
 			<li>
 				<a href="" class="navbar-menu-social">
 					<svg class="icon icon-facebook">

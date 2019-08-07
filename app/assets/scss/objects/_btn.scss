@@ -37,6 +37,18 @@
         }
     }
 
+    &.btn-secondary {
+        background-color: #fff;
+        border: 1px solid $pink;
+        color: $pink;
+        transition: ease .5s all;
+
+        &:hover {
+            color: #fff;
+            background-color: $pink;
+        }
+    }
+
     &.btn-small {
         width: 50%;
         @media screen and (min-width: 1024px) {
