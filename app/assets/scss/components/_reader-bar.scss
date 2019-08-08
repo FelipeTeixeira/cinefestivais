@@ -13,12 +13,21 @@
 .progress-container--content {
     align-items: center;
     display: flex;
-    flex-flow: row wrap;
+    font-weight: bold;
+    font-size: 0.875rem;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin: 4px 16px;
 
     img {
         width: 40px;
+    }
+
+    .progress-title {
+        margin-left: 8px;
+        @media screen and (min-width: 1024px) {
+            width: 70%;
+        }
     }
 }
 
@@ -27,6 +36,73 @@
     background: $pink;
     max-width: 100%;
     width: 0%;
+}
+
+.mobile-options {
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+.progress-options {
+    display: none;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    span:empty {
+        background-color: $gray;
+        width: 1px;
+
+        @media screen and (min-width: 1024px) {
+            margin: 0 16px;
+        }
+    }
+
+    .progress-share {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .share-link {
+            align-items: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            .icon-share-alt {
+                margin: 0 16px;
+            }
+        }
+
+        &:hover {
+            .progress-share-hover {
+                align-items: center;
+                display: flex;
+                flex-flow: row wrap;
+            } 
+            .share-link {
+                span {
+                    display: none;
+                }
+            } 
+        }
+
+        .progress-share-hover {
+            display: none;
+
+            .icon {
+                background-color: $gray;
+                border-radius: 50%;
+                fill: $white;
+                height: 20px;
+                margin: 0 4px;
+                padding: 5px;
+                width: 25px;
+            }
+        }
+    }
 }
 
 .menu-reader-options {
