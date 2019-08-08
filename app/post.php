@@ -2,7 +2,7 @@
 	include 'templates/nav-bar.php';
 ?>
 
-<header class="post-header">
+<header id="js-postheader" class="post-header">
     <img src="https://picsum.photos/id/237/350/500" alt="" class="post-header--picture">
     <div class="post-header--social">
         <div class="tags">
@@ -40,7 +40,9 @@
                     </svg>
                 </a>
                 <a href="">
-                <svg class="icon icon-link"><use xlink:href="#icon-link"></use></svg>
+                    <svg class="icon icon-link">
+                        <use xlink:href="#icon-link"></use>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -49,38 +51,85 @@
 
 <main class="postpage-body">
 
-    <h1 class="postpage-body--title">"É uma escolha pelas pessoas, não pelo rótulo": uma conversa com Maíra Bühler</h1>
+    <article id="js-postpage">
+        <h1 class="postpage-body--title">"É uma escolha pelas pessoas, não pelo rótulo": uma conversa com Maíra Bühler
+        </h1>
 
-    <section class="postpage-body--author">
+        <section class="postpage-body--author">
 
-        <div class="author-picture">
-            <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-photo" alt="">
-            <img src="https://randomuser.me/api/portraits/women/28.jpg" class="profile-photo" alt="">
+            <div class="author-picture">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" class="profile-photo" alt="">
+                <img src="https://randomuser.me/api/portraits/women/28.jpg" class="profile-photo" alt="">
+            </div>
+            <div class="author-name">
+                <a href="#">Adriano Garrett</a>
+                <a href="#">Gabriela Oliveira</a>
+            </div>
+
+        </section>
+
+        <span class="postpage-body--timehour">
+            15/07/2019 às 14h30
+        </span>
+        <span class="postpage-body--updated">
+            Atualizado em 31/07/2019 às 18h30
+        </span>
+
+        <hr class="postpage-body--separator">
+
+        <div class="flex-row-between">
+            <section class="postpage-body--text">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                    harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                    officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cum corrupti <a href="">repellendus beatae reprehenderit</a> nihil ipsa totam asperiores,
+                    harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                    officia ipsum?</p>
+
+                <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                    harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                    officia ipsum?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                    harum provident <a href="">repudiandae excepturi ratione</a> voluptatibus ex delectus eaque
+                    molestiae
+                    officia ipsum?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                    harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                    officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                    harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                    officia ipsum?</p>
+
+            </section>
+            <div class="postpage-body--ads">
+                <img src="https://dss.cbm.codes/wp-content/uploads/2017/02/news-layout-thumb-2-1024x1024.jpg" alt="">
+            </div>
         </div>
-        <div class="author-name">
-            <a href="#">Adriano Garrett</a>
-            <a href="#">Gabriela Oliveira</a>
-        </div>
 
-    </section>
+        <figure class="postpage-body--figure">
+            <img src="https://picsum.photos/id/236/600/300" alt="Random picture">
+            <figcaption>
+                <span class="figure-title">
+                    Caminhos
+                </span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, ipsum temporibus
+                necessitatibus doloremque a tempore obcaecati reprehenderit
+            </figcaption>
+        </figure>
 
-    <span class="postpage-body--timehour">
-        15/07/2019 às 14h30
-    </span>
-    <span class="postpage-body--updated">
-        Atualizado em 31/07/2019 às 18h30
-    </span>
-
-    <hr class="postpage-body--separator">
-
-    <div class="flex-row-between">
         <section class="postpage-body--text">
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
                 harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
                 officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Itaque cum corrupti <a href="">repellendus beatae reprehenderit</a> nihil ipsa totam asperiores,
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
                 harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
                 officia ipsum?</p>
 
@@ -90,7 +139,7 @@
                 officia ipsum?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-                harum provident <a href="">repudiandae excepturi ratione</a> voluptatibus ex delectus eaque molestiae
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
                 officia ipsum?</p>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -102,79 +151,36 @@
                 officia ipsum?</p>
 
         </section>
-        <div class="postpage-body--ads">
-            <img src="https://dss.cbm.codes/wp-content/uploads/2017/02/news-layout-thumb-2-1024x1024.jpg" alt="">
-        </div>
-    </div>
 
-    <figure class="postpage-body--figure">
-        <img src="https://picsum.photos/id/236/600/300" alt="Random picture">
-        <figcaption>
-            <span class="figure-title">
-                Caminhos
-            </span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, ipsum temporibus
-            necessitatibus doloremque a tempore obcaecati reprehenderit
-        </figcaption>
-    </figure>
-
-    <section class="postpage-body--text">
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?</p>
-
-        <p class="bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?
+        <q>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
             harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
             officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?</p>
+        </q>
 
-    </section>
+        <section class="postpage-body--text">
 
-    <q>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-        harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-        officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </q>
-
-    <section class="postpage-body--text">
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
-            harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
-            officia ipsum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                officia ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque cum corrupti repellendus beatae reprehenderit nihil ipsa totam asperiores,
+                harum provident repudiandae excepturi ratione voluptatibus ex delectus eaque molestiae
+                officia ipsum?</p>
 
 
-    </section>
+        </section>
 
-    <section class="postpage-body--text mt-32">
-        <h3>Sob Pressão</h3>
-        <p class="nomargin">Os filmes que fiz até hoje ão sobre os outros; são filmes cujo tema é a alteridade,
-            a diferença, então eles partem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Incidunt sint facilis quae voluptatum possimus labore
-            placeat quaerat unde ad quasi soluta mollitia saepe consequuntur quibusdam porro,
-            obcaecati accusamus. Eveniet, error.</p>
-    </section>
+        <section class="postpage-body--text mt-32">
+            <h3>Sob Pressão</h3>
+            <p class="nomargin">Os filmes que fiz até hoje ão sobre os outros; são filmes cujo tema é a alteridade,
+                a diferença, então eles partem Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Incidunt sint facilis quae voluptatum possimus labore
+                placeat quaerat unde ad quasi soluta mollitia saepe consequuntur quibusdam porro,
+                obcaecati accusamus. Eveniet, error.</p>
+        </section>
+    </article>
 
     <hr class="postpage-body--separator">
 
@@ -249,7 +255,9 @@
         </button>
     </div>
 
-    <?php 
+</main>
+
+<?php 
         include 'templates/newsletter.php';
     ?>
 
@@ -257,9 +265,6 @@
         include 'templates/sigacine.php';
     ?>
 
-    <?php 
+<?php 
         include 'templates/footer.php';
     ?>
-
-
-</main>

@@ -1,34 +1,44 @@
-window.onscroll = function() {
+_toggleLogo = () => {
     const imgNavbar = document.getElementById('js-navbar-logo');
-    if ( window.pageYOffset > 100 ) {
-        imgNavbar.src = "./assets/img/icone-cine-festivais.svg";
-            progressBar.classList.remove('is-hidden')
-    
-        var currY = $(this).scrollTop();
-        var postHeight = $(this).height();
-        var scrollHeight = $('main').height();
-        // Current percentual position
-        var scrollPercent = (currY / (scrollHeight - postHeight)) * 100;
-        console.log(scrollPercent);
-    
-        $('.reader-bar').css('width', scrollPercent +"%"  );
+
+    if (window.pageYOffset > 100) {
+        imgNavbar.src = './assets/img/icone-cine-festivais.svg';
+        imgNavbar.classList.add('scroll');
     } else {
-        imgNavbar.src = "./assets/img/logo-cine-festivais.svg";
+        imgNavbar.src = './assets/img/logo-cine-festivais.svg';
         imgNavbar.classList.remove('scroll');
-        progressBar.classList.add('is-hidden')
     }
 }
 
+toggleMenu = () => document.getElementById('js-navbar-menu').classList.toggle('navbar-menu-is-active');
 
-function toggleMenu() {
-    document.querySelector('#js-navbar-menu').classList.toggle('navbar-menu-is-active')
-}
-$( document ).ready(function() {
+_showProgressBar = () => {
+    const postHeaderHeight = document.getElementById('js-postheader').offsetHeight;
     const progressBar = document.getElementById('js-progressbar');
+    const post = document.getElementById('js-postpage');
+
+    window.pageYOffset > postHeaderHeight - 200 ? progressBar.classList.remove('is-hidden') : progressBar.classList.add('is-hidden');
     
-    $('body').scroll(function() {
+    const winScroll = (document.body.scrollTop || document.documentElement.scrollTop) - postHeaderHeight;
+    const height = post.clientHeight - postHeaderHeight;
+    const scrolled = (winScroll / height) * 100;
+    
+    document.getElementById('myBar').style.width = `${scrolled}%`;
+}
 
+showMenuOptions = () => {
+    document.getElementById('js-showMenu').classList.add('is-hidden');
+    document.getElementById('js-closeMenu').classList.remove('is-hidden');
+    document.getElementById('js-shareOptions').classList.remove('is-hidden');
+}
 
-    });
-});
+hideMenuOptions = () => {
+    document.getElementById('js-showMenu').classList.remove('is-hidden');
+    document.getElementById('js-closeMenu').classList.add('is-hidden');
+    document.getElementById('js-shareOptions').classList.add('is-hidden');
+}
 
+window.onscroll = () => {
+    _toggleLogo();
+    _showProgressBar();
+};

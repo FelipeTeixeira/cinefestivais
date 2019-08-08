@@ -3,9 +3,10 @@
 	include 'svg.php';
 ?>
 
-<nav id="js-progressbar" class="is-hidden">
-	<div class="reader-bar"></div>
-</nav>
+<?php 
+	include 'progressReader.php';
+?>
+
 <nav class="navbar">
 	<button class="navbar-btn" onclick="toggleMenu()">
 		<svg class="icon icon-menu">
