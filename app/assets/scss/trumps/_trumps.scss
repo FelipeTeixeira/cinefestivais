@@ -36,6 +36,12 @@
     margin-top: 32px;
 }
 
+.lg-50 {
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+    }
+}
+
 .nomargin {
     margin: 0!important;
 }
@@ -47,10 +53,6 @@
     &:hover {
         text-decoration: none;
     }
-}
-
-.img-full {
-    
 }
 
 .has-error {

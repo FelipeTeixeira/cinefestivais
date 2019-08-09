@@ -31,7 +31,7 @@
 		</button>
 		
 
-		<ul>
+		<ul class="navbar-links">
 			<li><a href="entrevistas.php" class="navbar-menu-item">Entrevistas</a></li>
 			<li><a href="" class="navbar-menu-item">Críticas</a></li>
 			<li><a href="coberturas.php" class="navbar-menu-item">Coberturas</a></li>

@@ -35,6 +35,13 @@
         &:hover {
             background-color:darken($pink, 3);
         }
+
+        &.blue {
+            background-color: $navyBlue;
+            &:hover {
+                background-color:darken($navyBlue, 3);
+            }
+        }
     }
 
     &.btn-secondary {
@@ -48,6 +55,7 @@
             background-color: $pink;
         }
     }
+    
 
     &.btn-small {
         width: 50%;
@@ -62,6 +70,13 @@
         }
         @media screen and (min-width: 1024px) {
             width: 20%;
+        }
+    }
+
+    &.btn-large {
+        width: 100%;
+        @media screen and (min-width: 1024px) {
+            width: 50%;
         }
     }
 }
