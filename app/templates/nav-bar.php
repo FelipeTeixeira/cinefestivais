@@ -14,7 +14,9 @@
 		</svg>
 	</button>
 
-	<img src="assets/img/logo-cine-festivais.svg" alt="Logo Cine Festivais" id="js-navbar-logo" class="navbar-logo">
+	<a href="/">
+		<img src="assets/img/logo-cine-festivais.svg" alt="Logo Cine Festivais" id="js-navbar-logo" class="navbar-logo">
+	</a>
 	<button class="navbar-btn">
 		<svg class="icon icon-search1">
 			<use xlink:href="#icon-search1"></use>
@@ -27,7 +29,7 @@
 				<use xlink:href="#icon-menu"></use>
 			</svg>
 		</button>
-		<img src="./assets/img/icone-cine-festivais.svg" alt="" class="navbar-menu-logo">
+		
 
 		<ul>
 			<li><a href="entrevistas.php" class="navbar-menu-item">Entrevistas</a></li>

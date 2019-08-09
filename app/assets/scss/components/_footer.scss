@@ -57,6 +57,13 @@
             margin: 0 4px;
             padding: 0px 10px;
             width: 40px;
+            @media screen and (min-width: 1024px) {
+                transition: background-color ease 0.5s, fill ease 0.3s;
+                &:hover {
+                    background-color: $navyBlue;
+                    fill: $white;
+                }
+            }
         }
     }
 
