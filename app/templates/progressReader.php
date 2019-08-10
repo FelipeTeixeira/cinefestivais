@@ -1,4 +1,4 @@
-<nav id="js-progressbar" class="progress-container is-hidden">
+<nav id="js-progressbar" class="progress-container">
     <div class="progress-container--content">
         <img src="./assets/img/icone-cine-festivais.svg" alt="">
         <span id="js-pagetitle" class="progress-title">Título da página</span>

@@ -58,14 +58,17 @@
     
 
     &.btn-small {
+        max-width: 200px;
         width: 50%;
         @media screen and (min-width: 1024px) {
             width: 15%;
         }
     }
     &.btn-medium {
+        max-width: 250px;
         width: 75%;
         @media screen and (min-width: 768px) {
+            max-width: 200px;
             width: 40%;
         }
         @media screen and (min-width: 1024px) {

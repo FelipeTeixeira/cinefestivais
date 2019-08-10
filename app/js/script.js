@@ -17,12 +17,12 @@ _showProgressBar = () => {
     const progressBar = document.getElementById('js-progressbar');
     const post = document.getElementById('js-postpage');
 
-    window.pageYOffset > postHeaderHeight - 200 ? progressBar.classList.remove('is-hidden') : progressBar.classList.add('is-hidden');
-    
+    window.pageYOffset > postHeaderHeight - 200 ? progressBar.classList.add('progress-container-is-active') : progressBar.classList.remove('progress-container-is-active');
+
     const winScroll = (document.body.scrollTop || document.documentElement.scrollTop) - postHeaderHeight;
     const height = post.clientHeight - postHeaderHeight;
     const scrolled = (winScroll / height) * 100;
-    
+
     document.getElementById('myBar').style.width = `${scrolled}%`;
 }
 

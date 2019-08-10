@@ -23,12 +23,13 @@
     }
 
     &-logo {
+        left: 0;
+        margin: auto;
+        right: 0;
         position: absolute;
+        transition: cubic-bezier(0.215, 0.610, 0.355, 1) width 0.3s;
         top: 0;
         width: 100px;
-        left: 0;
-        right: 0;
-        margin: auto;
 
         &.scroll {
             width: 50px;
