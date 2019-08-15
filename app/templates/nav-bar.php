@@ -3,6 +3,9 @@
 	include 'svg.php';
 ?>
 
+<nav id="js-searchBar" class="search-bar">
+	<input type="text" placeholder="O que você procura?" class="searchbar-input">
+</nav>
 <nav class="navbar">
 	<div class="navbar-lg">
 		<button class="navbar-btn" id="btn-toggle" onclick="toggleMenu()">
@@ -20,13 +23,14 @@
 	<a href="/">
 		<img src="assets/img/logo-cine-festivais.svg" alt="Logo Cine Festivais" id="js-navbar-logo" class="navbar-logo">
 	</a>
+
 	<div class="navbar-lg">
 		<div class="navbar-links-lg">
 			<a href="entrevistas.php" class="navbar-menu-item">Entrevistas</a>
 			<a href="" class="navbar-menu-item">Críticas</a>
 			<a href="coberturas.php" class="navbar-menu-item">Coberturas</a>
 		</div>
-		<button class="navbar-btn">
+		<button class="navbar-btn" id="btn-toggleSearch" onclick="toggleSearch()">
 			<svg class="icon icon-search1">
 				<use xlink:href="#icon-search1"></use>
 			</svg>

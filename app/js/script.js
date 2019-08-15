@@ -19,6 +19,11 @@ toggleMenu = () => {
     }
 };
 
+toggleSearch = () => {
+    document.getElementById('js-searchBar').classList.toggle('search-bar-is-active');
+    document.getElementById('btn-toggleSearch').classList.toggle('is-active-search');
+}
+
 _showProgressBar = () => {
     const postHeaderHeight = document.getElementById('js-postheader').offsetHeight;
     const progressBar = document.getElementById('js-progressbar');

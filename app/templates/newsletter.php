@@ -6,6 +6,11 @@
         Eaque, ducimus reiciendis illo quo dolorum
     </p>
     <div class="is-center">
-        <button type="button" class="btn btn-default btn-small">Assinar</button>
+        <a 
+            href="https://us16.admin.mailchimp.com/lists/designer/?id=30095" 
+            class="btn btn-default btn-small"
+            target="_blank">
+            Assinar
+        </a>
     </div>
 </section>

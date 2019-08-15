@@ -1,3 +1,31 @@
+.search-bar {
+    background-color: $pink;
+    height: 50px;
+    display: none;
+
+    top: 0;
+    text-align: center;
+    transform: translateY(-100px);
+    transition: transform .2s ease;
+    will-change: transform;
+    width: 100%;
+
+    &-is-active {
+        transform: translateY(0);
+        display: flex;
+    }
+    .searchbar-input {
+        background-color: $pink;
+        color: #fff;
+        padding: 0 16px;
+        width: 100%;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+}
+
 .navbar {
     align-items: center;
     background-color: #fff;
@@ -29,6 +57,13 @@
 
         &.is-active {
             background-color: #333;
+            .icon {
+                fill: $white;
+            }
+        }
+
+        &.is-active-search {
+            background-color: $pink;
             .icon {
                 fill: $white;
             }
@@ -152,7 +187,7 @@
         left: 0;
         text-align: center;
         top: 50px;
-        transform: translateX(-100vw);
+        transform: translateX(-120vw);
         transition: transform .2s ease;
         width: 100%;
         will-change: transform;
