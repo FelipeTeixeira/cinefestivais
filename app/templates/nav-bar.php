@@ -3,25 +3,35 @@
 	include 'svg.php';
 ?>
 
-<?php 
-	include 'progressReader.php';
-?>
-
 <nav class="navbar">
-	<button class="navbar-btn" onclick="toggleMenu()">
-		<svg class="icon icon-menu">
-			<use xlink:href="#icon-menu"></use>
-		</svg>
-	</button>
+	<div class="navbar-lg">
+		<button class="navbar-btn" id="btn-toggle" onclick="toggleMenu()">
+			<svg class="icon icon-menu">
+				<use xlink:href="#icon-menu"></use>
+			</svg>
+		</button>
+		<div class="navbar-links-lg">
+			<a href="entrevistas.php" class="navbar-menu-item">Entrevistas</a>
+			<a href="" class="navbar-menu-item">Críticas</a>
+			<a href="coberturas.php" class="navbar-menu-item">Coberturas</a>
+		</div>
+	</div>
 
 	<a href="/">
 		<img src="assets/img/logo-cine-festivais.svg" alt="Logo Cine Festivais" id="js-navbar-logo" class="navbar-logo">
 	</a>
-	<button class="navbar-btn">
-		<svg class="icon icon-search1">
-			<use xlink:href="#icon-search1"></use>
-		</svg>
-	</button>
+	<div class="navbar-lg">
+		<div class="navbar-links-lg">
+			<a href="entrevistas.php" class="navbar-menu-item">Entrevistas</a>
+			<a href="" class="navbar-menu-item">Críticas</a>
+			<a href="coberturas.php" class="navbar-menu-item">Coberturas</a>
+		</div>
+		<button class="navbar-btn">
+			<svg class="icon icon-search1">
+				<use xlink:href="#icon-search1"></use>
+			</svg>
+		</button>
+	</div>
 
 	<div class="navbar-menu" id="js-navbar-menu">
 		<button class="navbar-btn navbar-menu-btnToggle" onclick="toggleMenu()">
@@ -65,6 +75,36 @@
 			</li>
 		</ul>
 
+	</div>
+
+	<div class="navbar-menu-lg" id="js-navbar-lg">
+		<div class="menu-lg--links">
+			<a href="quem-somos.php" class="navbar-menu-item">Quem Somos</a>
+			<a href="anuncie.php" class="navbar-menu-item">Anuncie</a>
+			<a href="contato.php" class="navbar-menu-item">Contato</a>
+		</div>
+		<div class="menu-lg--links">
+			<a href="" class="navbar-menu-social">
+				<svg class="icon icon-facebook">
+					<use xlink:href="#icon-facebook"></use>
+				</svg>
+			</a>
+			<a href="" class="navbar-menu-social">
+				<svg class="icon icon-instagram">
+					<use xlink:href="#icon-instagram"></use>
+				</svg>
+			</a>
+			<a href="" class="navbar-menu-social">
+				<svg class="icon icon-twitter">
+					<use xlink:href="#icon-twitter"></use>
+				</svg>
+			</a>
+			<a href="" class="navbar-menu-social">
+				<svg class="icon icon-youtube">
+					<use xlink:href="#icon-youtube"></use>
+				</svg>
+			</a>
+		</div>
 	</div>
 
 </nav>

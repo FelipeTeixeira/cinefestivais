@@ -10,7 +10,14 @@ _toggleLogo = () => {
     }
 }
 
-toggleMenu = () => document.getElementById('js-navbar-menu').classList.toggle('navbar-menu-is-active');
+toggleMenu = () => {
+    if (window.innerWidth <= 768) {
+        document.getElementById('js-navbar-menu').classList.toggle('navbar-menu-is-active')
+    } else {
+        document.getElementById('js-navbar-lg').classList.toggle('navbar-menu-lg-is-active')
+        document.getElementById('btn-toggle').classList.toggle('is-active');
+    }
+};
 
 _showProgressBar = () => {
     const postHeaderHeight = document.getElementById('js-postheader').offsetHeight;

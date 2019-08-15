@@ -1,6 +1,9 @@
 <?php 
 	include 'templates/nav-bar.php';
 ?>
+<?php 
+	include 'progressReader.php';
+?>
 
 <header id="js-postheader" class="post-header">
     <img src="https://picsum.photos/id/237/350/500" alt="" class="post-header--picture">
